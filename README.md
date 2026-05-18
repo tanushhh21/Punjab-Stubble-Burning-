@@ -1,4 +1,3 @@
-# Punjab-Stubble-Burning-
 # Punjab Stubble Fire Forecasting
 
 **Course:** AI3011 Machine Learning & Pattern Recognition, Plaksha University, Spring 2026
@@ -18,7 +17,7 @@ Punjab burns approximately 19 million tonnes of paddy stubble annually during Oc
 
 | Metric | Value | Notes |
 |---|---|---|
-| PR-AUC | 0.893 | Held-out test year 2023 |
+| PR-AUC | 0.869 | Held-out test year 2023 |
 | MAE | 1.95 | Fire-weighted count |
 | Spearman | 0.76 | Rank correlation |
 | Districts > 0.95 PR-AUC | 5 of 22 | |
@@ -93,9 +92,9 @@ project/
 | Model | PR-AUC (test 2023) | MAE |
 |---|---|---|
 | Persistence baseline | 0.750 | 2.57 |
-| Logistic Regression | — | — |
-| Random Forest | — | — |
-| XGBoost-Tweedie (tuned) | **0.893** | **1.95** |
+| Logistic Regression | 0.9 | — |
+| Random Forest | 0.889 | 2.87|
+| XGBoost-Tweedie (tuned) | **0.869** | **1.95** |
 | ConvLSTM (spatial) | — | 0.43 |
 
 XGBoost-Tweedie with `tweedie_variance_power=1.5` handles zero-inflated count data. Tuned with Optuna (100 TPE trials, objective: PR-AUC on val 2022). ConvLSTM motivated by Moran's I = 0.54 on XGBoost residuals.
@@ -113,7 +112,7 @@ XGBoost-Tweedie with `tweedie_variance_power=1.5` handles zero-inflated count da
 7. Shuffled-target control returned PR-AUC 0.45 (base rate)
 8. No grid_id passed directly as a feature
 
-Initial v1 model showed PR-AUC 0.997 — traced to NDVI NaN values aligning perfectly with zero-fire rows (merge artifact). Rebuilt from raw MOD13Q1 rasters. Honest post-fix: **0.893**.
+Initial v1 model showed PR-AUC 0.997 — traced to NDVI NaN values aligning perfectly with zero-fire rows (merge artifact). Rebuilt from raw MOD13Q1 rasters. Honest post-fix: **0.869**.
 
 ---
 
@@ -171,4 +170,3 @@ optuna
 nbformat
 nbconvert
 ```
-
