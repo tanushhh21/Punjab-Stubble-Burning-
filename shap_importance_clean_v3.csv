@@ -1,0 +1,16 @@
+feature,mean_abs_shap,pct_total
+neighbor_fires_last_week,0.41872808,20.514988
+fire_count_last_week,0.392992,19.254086
+week_of_season,0.37366012,18.306948
+3yr_avg,0.36381063,17.824387
+avg_frp_last_week,0.20138611,9.866628
+neighbor_fires_last_year,0.09615554,4.7110043
+same_week_last_year,0.047474213,2.325932
+grid_y,0.043636363,2.1379018
+NDVI_velocity,0.039301187,1.9255061
+grid_x,0.030645685,1.501442
+NDVI,0.014177546,0.6946088
+avg_brightness_last_week,0.0058423644,0.28623837
+EVI,0.005636292,0.27614215
+NDVI_anomaly,0.0040470557,0.19827977
+night_fire_pct_last_week,0.0035904427,0.17590865

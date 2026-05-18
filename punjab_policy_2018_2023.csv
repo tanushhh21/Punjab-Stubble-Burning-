@@ -1,0 +1,7 @@
+year,happy_seeder_subsidy_indiv_pct,happy_seeder_subsidy_coop_pct,super_seeder_available,ngt_enforcement_level,ex_gratia_announced,election_year,crm_funds_central_cr,msp_paddy_common,ppcb_total_fires,crm_funds_cumulative_cr,years_since_crm_scheme
+2018,0.5,0.8,0,1,0,0,269.38,1750,50590,269.38,0
+2019,0.5,0.8,0,1,1,0,248.0,1815,55210,517.38,1
+2020,0.5,0.8,1,2,0,0,272.0,1868,76590,789.38,2
+2021,0.5,0.8,1,2,0,0,235.0,1940,71304,1024.38,3
+2022,0.5,0.8,1,2,0,1,363.0,2040,49922,1387.38,4
+2023,0.5,0.8,1,2,0,0,600.0,2183,36663,1987.38,5

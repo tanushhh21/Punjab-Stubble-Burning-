@@ -1,0 +1,6 @@
+Model,Leaky_v2_PR_AUC,Clean_v3_PR_AUC,Drop,Note
+Persistence,0.75,0.75,0.0,no change (no NDVI)
+LogReg,0.887,0.9,-0.013000000000000012,minor change
+RandomForest,0.971,0.889,0.08199999999999996,leakage removed
+XGB-Tweedie,0.997,0.894,0.10299999999999998,leakage removed
+Hurdle,0.996,0.88,0.11599999999999999,leakage removed
